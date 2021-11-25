@@ -1,4 +1,4 @@
-FROM quay.io/evryfs/base-python:3.9.6
+FROM quay.io/evryfs/base-python:3.10.0
 ARG BUILD_DATE
 ARG BUILD_URL
 ARG GIT_URL
@@ -22,7 +22,7 @@ ENV PIP_INDEX_URL https://pypi.org/simple
 ENV DEBIAN_FRONTEND noninteractive
 USER root
 RUN apt-get update && \
-	apt-get install -y --no-install-recommends docker.io docker-compose make git gcc && \
+	apt-get install -y --no-install-recommends docker.io docker-compose make git gcc libc-dev libsasl2-dev && \
     apt-get -y clean && \
     rm -rf /var/cache/apt /var/lib/apt/lists/* /tmp/* /var/tmp/*
 COPY requirements.txt /tmp/requirements.txt
