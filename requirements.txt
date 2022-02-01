@@ -1,6 +1,6 @@
 poetry==1.1.12
 virtualenv==20.13.0
-Black==21.12b0
+Black==22.1.0
 flake8==4.0.1
 bandit==1.7.2
 pytest==6.2.5
