@@ -1,5 +1,5 @@
 poetry==1.1.13
-virtualenv==20.13.1
+virtualenv==20.13.2
 Black==22.1.0
 flake8==4.0.1
 bandit==1.7.2
