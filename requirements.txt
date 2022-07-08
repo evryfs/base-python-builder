@@ -1,4 +1,4 @@
-poetry==1.1.13
+poetry==1.1.14
 virtualenv==20.15.1
 Black==22.6.0
 flake8==4.0.1
